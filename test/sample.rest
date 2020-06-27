@@ -1,0 +1,64 @@
+PUT http://localhost:5181/api/sign_up
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+###
+
+POST http://localhost:5181/api/login_in
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+###
+
+GET http://localhost:5181/api/user
+
+###
+
+POST http://localhost:5181/api/logout
+
+###
+
+GET http://localhost:5181/api/deck
+
+###
+
+PUT http://localhost:5181/api/deck
+content-type: application/json
+
+{
+    "name": "节奏牧",
+    "code": "AAECAa0GAqTVA6+6Aw7lBPgCk7oDsLoD0qUDhKgDm7oDyJ0DmrYD6boD5r4Dr6UDo9UDlroDAA=="
+}
+
+###
+
+POST http://localhost:5181/api/deck
+content-type: application/json
+
+{
+    "name": "节奏牧"
+}
+
+###
+
+GET http://localhost:5181/api/deck
+
+###
+
+PUT http://localhost:5181/api/room
+
+###
+
+POST http://localhost:5181/api/room/1
+
+###
+
+GET http://localhost:5181/api/room/1
